@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Futura LT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Regular'), url('font/FuturaLT.woff') format('woff');
+    }
+    
+      
+    @font-face {
+    font-family: 'Futura LT Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Light'), url('font/FuturaLT-Light.woff') format('woff');
+    }
+      
+    
+          
+    @font-face {
+    font-family: 'Futura LT Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura LT Bold'), url('font/FuturaLT-Bold.woff') format('woff');
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    
+     
+    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif ;
+    letter-spacing: 0.1px;
+
+}
+
+html, body { height:100%; width:100%; }
+
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0; 
+
+}
+header{
+    width: 100%;
+    height: 18vh;
+    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 2px 8px -2px rgba(0,0,0,0.15);
+    
+
+}
+
+
+
+nav{
+    display: flex;
+    margin-left: auto;
+    width: 70%;
+    height: 18vh;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.nav-links li{
+    /* margin-left: 15px; */
+    
+}
+
+
+
+
+.nav-links li a{
+   
+    text-decoration: none;
+    font-family: 'futura lt regular';
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: rgb(26, 26, 26);
+   transition: all 0.3s ease 0s;
+   letter-spacing: 0.5px;
+}
+.nav-links li a:hover{
+    color: rgb(255, 216, 42);
+}
+
+
+
+.logo {
+    background-image: url("img/logo-amarillo-trans.png");
+    background-size: contain;
+    width: 25%;
+    margin: 10px 0 0 5%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    min-width: 200px;
+      
+    }
+
+.home-wrapper{
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/baner-home-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 80vh;
+     
+    
+}   
+
+
+.home{
+    margin: auto;
+    width: 60%;
+    padding: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.home h1{
+    font-family: 'Futura LT regular';
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: white;
+}    
+.home p{
+    color: white;
+}    
+
+.home button {
+    font-family: 'Futura LT Bold';
+    border-radius: 50px;
+    padding: 20px 40px;
+    background-color:transparent;
+    border: solid 4px rgba(255, 218, 59, 1);
+    font-weight: ;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    color: white;
+}
+
+.home button:hover{
+    background-color:rgba(255, 218, 59, 1);
+}
+
+
+.servicios-wrapper{
+    
+    background-color: #f1f1f0;
+    padding: 40px 0;
+    margin: auto;
+   
+}   
+/* here start the card grid implementation */
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem , .8fr));
+    column-gap: 40px;
+    justify-content: center;
+    padding: 0 15%;
+
+}
+/* here end the card grid implementation */
+
+
+/* here start the card grid implementation */
+
+.servicio-card{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 10px;
+    margin: 20px auto;
+    text-align:center;
+    
+   
+}
+
+/* here end the card grid implementation */
+
+
+.servicio-card img{
+    border-radius: 50%;
+    width: 90%;
+    margin: 0 auto;
+       
+}
+.servicio-card button{
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    background-color: rgba(255, 218, 59, 1);
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 10px 10px -12px rgba(0,0,0,0.75);
+             
+}
+
+.servicio-card button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Futura LT regular';
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}         
+
+
+.servicio-card button:hover{
+    background-color: rgba(255, 218, 59, 0.8);
+    box-shadow: none;
+}
+
+
+
+
+.eventos-wrapper{
+    width: 90%;
+    padding: 40px 0;
+    margin: auto;
+
+}
+
+/* here start the card grid implementation */
+.contenedor-eventos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem , 1fr));
+    column-gap: 80px;
+    padding: 0 15%;
+
+}
+/* here end the card grid implementation */
+
+
+
+.title{
+    padding: 30px 0 30px 0;
+    text-transform: uppercase;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 2rem;
+}
+
+/* here start the card grid implementation */
+
+.eventos-card{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 10px;
+    margin: 20px auto;
+    text-align:center;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.15);
+ }
+
+/* here start the card grid implementation */
+
+
+
+.eventos-card img{
+        width: 100%;
+}
+
+.texto{
+    padding:  0 20px ;
+}
+.eventos-card .texto h1{
+    font-family: 'Futura LT regular';
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 0 20px;
+}
+.eventos-card .texto p {
+    font-family: 'Futura LT light';
+    font-size: 1rem;
+    padding: 0 20px;
+
+}
+.eventos-card button{
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    background-color: rgba(255, 218, 59, 1);
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+             
+}
+.eventos-card button:hover{
+    background-color: rgba(255, 218, 59, 0.9);
+    box-shadow: 0px 10px 10px -12px rgba(0,0,0,0.75);
+}
+.eventos-card button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Futura LT regular';
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}         
+
+
+
+
+
+/* <---------------footer-------------------> */
+
+.footer-wrapper{
+        
+    
+    padding-top: 40px;
+    margin: auto;
+       
+      
+}
+
+footer{
+     width: 100%;
+}
+
+.footer-logo {
+    display: block;
+    background-image: url("img/fondo_transp.png");
+    background-size: 100%;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    /* background-color: #8d0f0f; */
+    background-repeat: no-repeat; 
+    
+}
+
+.social-media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}    
+
+.social-icon{
+    width: 70px;
+}
+
+.footer-info{
+    text-align: center;
+    padding: 0 20px;
+   
+}
+
+/* <---------------media querys-------------------> */
+
+@media screen and (max-width:1000px){
+   
+    .home-wrapper{
+        padding: 20px 0;
+    }
+    .home h1{
+        font-size: 1.8rem;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+    }
+    
+    .home button {
+        padding: 15px 30px;
+        letter-spacing: 2px;
+       
+    }
+    
+    .nav-links{
+        position:fixed;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        clip-path: circle(100px at 100% -20%); 
+        -webkit-clip-path: circle(100px at 100% -20%);
+        -webkit-overflow-scrolling: touch;
+        transition: all 1s ease-out;   
+    }
+    .nav-links.open{
+        clip-path: circle(1200px at 120% -20%);
+        -webkit-clip-path: circle(1200px at 120% -20%);
+        pointer-events: all;
+    }
+    .burger.open{
+        position: absolute;
+        top: 7%;
+        right:3%;
+    }
+    html {
+        height  : 100%;
+        overflow: hidden;
+    }
+    body {
+        height  : 100%;
+        overflow: auto;
+    }
+    .logo{
+        margin-right: auto;
+    }
+    
+    .line{
+            background-color: rgb(58, 58, 58);
+            width: 30px;
+            height: 5px;
+            margin: 2.5px;
+            border-radius: 2px;
+        }
+    .burger{
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        margin: auto 5%;
+        z-index: 2;
+    }
+
+}
+@media screen and (max-width:600px){
+    
+    .social-icon{
+        width: 50px;
+    }
+    .title h1{
+        font-size: 1.5rem;
+    }
+
+    .home h1{
+        font-size: 1.7rem;
+    }
+    .home{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .home{
+        width: 90%;
+        
+        
+    }
+    .home h1{
+        font-size: 2rem;
+    }
+    .home{
+        font-size: 1.2rem;
+    }
+    .home button{
+        margin-top: 30px;
+    }
+
+}
